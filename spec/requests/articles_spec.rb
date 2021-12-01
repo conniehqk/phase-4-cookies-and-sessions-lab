@@ -77,7 +77,7 @@ RSpec.describe "Articles", type: :request do
         get "/articles/#{Article.first.id}"
         get "/articles/#{Article.first.id}"
   
-        expect(session[:page_views]).to eq(3)
+        expect(session[:page_views]).to eq(2)
       end
     end
   end
